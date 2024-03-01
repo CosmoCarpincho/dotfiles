@@ -1,7 +1,6 @@
 #!/bin/bash
 
 install_command_with_apt() {
-    read -r
     com="$1"
 
     if ! command -v "$com" &>/dev/null; then

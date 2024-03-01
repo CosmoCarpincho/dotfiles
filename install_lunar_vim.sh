@@ -1,5 +1,4 @@
 #!/bin/bash
-read -r
 source funciones_genericas.sh
 
 
