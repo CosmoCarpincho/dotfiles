@@ -1,6 +1,4 @@
 #!/bin/bash
-source funciones_genericas.sh
-
 
 ######## INSTALL LUNAR VIM ###########
 #git make pip node cargo
