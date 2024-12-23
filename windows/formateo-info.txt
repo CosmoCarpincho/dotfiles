@@ -1,0 +1,15 @@
+### Programas scoop
+
+| Programa |Ultima Versión| Scoop| 
+|Chrome    |Versión 131.0.6778.140 (Build oficial) (64 bits)|131.0.6778.140|
+|Logseq |v0.10.9 |v0.10.9|
+|Obsidian|v1.7.7|v1.7.7|
+|Zotero|v7.0.11|v7.0.11|
+|Anki|v24.11|v24.11|
+|vscode|v1.96.1|v1.96.0|  muy poca la diferencia
+
+
+
+NOTA: parece que winget es de Windows y debe tener algunas cosas mas actualizadas de Windows.
+
+El problema con vscode es que para activar el menú contextual tenes que configurar el winget : https://github.com/microsoft/winget-cli/discussions/1798

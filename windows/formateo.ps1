@@ -50,6 +50,23 @@ winget.exe install --id "Sandboxie.Plus" --exact --source winget --accept-source
 
 #Programación
 
+#TODO: 
+#Instalar python, rust, NodeJs, etc ... pasa que al instalar LunarVim manual me instalo python y nodejs.
+
+# Es necesario tambien para que ande LunarVim
+# UCRT es la version universal (Universal C Runtime). Desde Windows 10 en adelante. (para Windows anteriores usar MSVCRT)
+winget install --id 'MartinStorsjo.LLVM-MinGW.UCRT' --source winget
+
+# par tener el comando man https://develmonk.com/2021/04/26/man-command-in-windows-possible/
+winget install --id=MSYS2.MSYS2  -e
+# Recordar ->
+# Remove-Alias -Name man # pwsh tiene muchos alias que colisionan con los comandos.
+# Agregar ruta de mssys2 a el path
+
+
+# viejas constumbres :) ->
+#winget.exe install --id=uutils.coreutils  -e
+
 # Manual por config -> winget.exe install -e --id "Git.Git"
 winget.exe install --id "SWI-Prolog.SWI-Prolog" --exact --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements #--force
 
@@ -58,7 +75,8 @@ winget.exe install --id "SWI-Prolog.SWI-Prolog" --exact --source winget --accept
 winget.exe install -e --id "Microsoft.PowerShell.Preview"
 winget.exe install --id "JanDeDobbeleer.OhMyPosh" -s winget
 
-$env:Path += ";C:\Users\user\AppData\Local\Programs\oh-my-posh\bin"
+
+$env:Path += ";C:\Users\Cosmo\AppData\Local\Programs\oh-my-posh\bin"
 
 # Buenisimo! oh-my-posh tiene instalador de fuentes :)
 oh-my-posh.exe font install "Meslo"
@@ -74,6 +92,15 @@ oh-my-posh.exe init pwsh --config "$env:POSH_THEMES_PATH\$themeOhMyPosh" | Invok
 # Iconos en powershell
 # https://github.com/devblackops/Terminal-Icons
 Install-Module -Name Terminal-Icons -Repository PSGallery
+
+# Autocompletado
+# Install-Module PSReadLine -Scope CurrentUser # ya viene por default
+
+# Para que te de las opciones abajo (no me gusta tanto porque mueve la pantalla)
+# Estas config van en $PROFILE
+# Set-PSReadLineOption -PredictionViewStyle ListView
+# para volver a la opcion de autocompletado
+#Set-PSReadLineOption -EditMode Emacs
 
 # Agregar al $PROFILE
 $lineOhMyPosh = 'oh-my-posh.exe init pwsh --config "$env:POSH_THEMES_PATH\' + $themeOhMyPosh + ' | Invoke-Expression'
@@ -125,7 +152,7 @@ scoop install poppler
 
 
 #terminal fuentes
-function instalar-fuentes {
+function instalarFuentes {
     # TODO: !!!
     # FUNCIONA PERO TERMINAR QUE ENTRE POR PARAMETROS LAS URL DE LAS FUENTES
     # Siempre con admin
@@ -178,7 +205,7 @@ function instalar-fuentes {
 
 }
 
-function installar-whatsapp-instalador {
+function installarWhatsappInstalador {
 
 $tempInstaller = "$env:TEMP\WhatsAppInstaller.appinstaller"
 
