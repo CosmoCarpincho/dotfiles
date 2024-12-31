@@ -10,6 +10,7 @@ winget.exe install --id "Logseq.Logseq" --exact --source winget --accept-source-
 winget.exe install --id "Obsidian.Obsidian" --exact --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements #--force
 winget.exe install --id "Anki.Anki" --exact --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements --force
 winget.exe install --id "calibre.calibre" --exact --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements #--force
+winget install --id=JohnMacFarlane.Pandoc --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements
 
 #Ofimatica
 winget.exe install --id "TheDocumentFoundation.LibreOffice" --exact --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements #--force
@@ -40,7 +41,7 @@ winget install -e --id Valve.Steam --source winget --accept-source-agreements --
 winget.exe install --id "Sandboxie.Plus" --exact --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements #--force
 # winget.exe install --id "PortSwigger.BurpSuite.Community" --exact --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements #--force
 # winget.exe install --id "WiresharkFoundation.Wireshark" --exact --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements #--force
-# no winget mstore
+# no winget mstore -> 
 #winget.exe install -e --id "KeePassXCTeam.KeePassXC" --source winget --accept-source-agreements --disable-interactivity --accept-package-agreements #--force
 
 #IDE
