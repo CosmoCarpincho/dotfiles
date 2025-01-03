@@ -229,3 +229,8 @@ Write-Host "Instalación completada." -ForegroundColor Green
 
 winget search --id sharkdp.bat --source winget
 winget search --id "Oracle.VirtualBox" --source winget
+
+
+#### Completions PowerShell TODO: HACER VALIDACIONES
+mkdir ~/.completions
+Copy-Item -Path ./.completions/ ~/

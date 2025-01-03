@@ -18,3 +18,10 @@ Remove-Alias -Name man
 Remove-Alias -Name cp
 Remove-Alias -Name mv
 Set-Alias -Name find -Value C:\msys64\usr\bin\find.exe
+
+
+# Completions TODO: validaciones
+
+ rustup completions powershell | Out-String | Invoke-Expression
+  
+ ./.completions/mis-completions.ps1
