@@ -224,3 +224,8 @@ Write-Host "Instalación completada." -ForegroundColor Green
 
 }
 
+
+##### NUEVOS ACOMODAR
+
+winget search --id sharkdp.bat --source winget
+winget search --id "Oracle.VirtualBox" --source winget
